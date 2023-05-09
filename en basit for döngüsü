@@ -1,0 +1,4 @@
+fun main(args: Array<String>) {
+    for(sayac in 1..10)
+        println("Merhaba")
+}
