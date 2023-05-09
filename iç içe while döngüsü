@@ -1,0 +1,16 @@
+fun main(args: Array<String>) {
+    var toplam:Int=0
+    while(true){
+        print("bir sayı giriniz")
+        var sayi= readln().toInt()
+        if (sayi>0 && sayi<51){
+            if (sayi ==15){
+                break
+            }
+            toplam=toplam+sayi
+        }
+    }
+
+    print("girilen sayilarin toplamı $toplam")
+
+}
