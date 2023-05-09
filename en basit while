@@ -1,0 +1,8 @@
+fun main(args: Array<String>) {
+    var sayi=1
+    while(sayi<11) {
+        println("Merhaba")
+        sayi++
+    }
+
+}
