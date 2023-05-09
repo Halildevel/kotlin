@@ -1,0 +1,12 @@
+fun main(args: Array<String>) {
+    println("1-20 arasında bir sayı giriniz:")
+    var a= readln().toInt()
+    when(a) {
+        1,2,3 -> print("girilen değer 1 ile 3 arasındadır")
+        in 4..10 -> print("girilen değer 4 ve 10 arasındadır")
+        in 11..20-> print("girilen değer 4 ve 10 arasındadır")
+        else -> print("$a değer aralık dışındadır")
+    }
+
+
+}
