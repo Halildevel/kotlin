@@ -1,0 +1,7 @@
+fun main(args: Array<String>) {
+    var a=20
+    var b=30
+    var max= if (a>b) a else b
+    print("büyük sayı $max")
+
+}
