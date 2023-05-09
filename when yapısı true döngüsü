@@ -1,0 +1,12 @@
+fun main(args: Array<String>) {
+    println("yasinizi giriniz:  ")
+    var yas= readln().toInt()
+    var gencmi=when(yas)
+    {
+        in 18..40->true
+        else ->false
+
+    }
+    print ("genc olma durumunuz, $gencmi")
+
+}
