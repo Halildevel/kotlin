@@ -1,0 +1,12 @@
+fun main(args: Array<String>) {
+    println("not ortalamasını giriniz")
+    var ort = readln().toInt()
+    if (ort>=80){
+        println("A ile Geçtiniz")}
+    else if (ort>=50){
+        println("C ile Geçtiniz")}
+    else {
+        println("Kaldınız")}
+
+
+}
