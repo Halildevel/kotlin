@@ -1,0 +1,4 @@
+fun main(args: Array<String>) {
+    for (deger in 10 downTo 1)
+        println(deger)
+}
