@@ -1,0 +1,25 @@
+fun main(args: Array<String>) {
+    println("bir sayı giriniz:")
+    var a = readln().toInt()
+    println("bir sayı daha giriniz:")
+    var b = readln().toInt()
+    println("işlem seciniz: 1 toplama, 2 çıkarma, 3 çaprma, 4 bölme")
+    var islem = readln().toString()
+
+    if (islem == "1") {
+        println("$a ve $b sayılarının toplamı" + (a + b))
+    } else if (islem == "2") {
+        println("$a ve $b sayılarının farkı" + (a - b))
+    } else if (islem == "3") {
+        println("$a ve $b sayılarının çarpımı" + (a * b))
+    } else if (islem == "4") {
+        if (b == 0) {
+            println("geçerli bir işlem giriniz")
+        } else {
+
+            println("$a ve $b sayılarının bölümü:" + (a / b))
+        }
+
+    }
+
+}
