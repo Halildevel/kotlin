@@ -1,0 +1,11 @@
+fun main(args: Array<String>) {
+    println("bir sayı giriniz")
+    var sayi1= readln().toInt()
+    println("bir sayı giriniz")
+    var sayi2= readln().toInt()
+    println("atlama miktarı")
+    var artirma= readln().toInt()
+        for (islem in sayi1..sayi2 step artirma)
+            println(islem)
+
+}
