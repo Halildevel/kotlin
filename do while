@@ -1,0 +1,9 @@
+fun main(args: Array<String>) {
+    var sayi=11
+    do {
+       print("döngü içi")
+       print(sayi)
+       sayi++
+    }while (sayi<11)
+    print("döngü dışı")
+}
