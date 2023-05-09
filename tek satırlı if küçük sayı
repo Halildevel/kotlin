@@ -1,0 +1,13 @@
+fun main(args: Array<String>) {
+    print ("1. Sayı:")
+    var a= readln().toInt()
+    print ("2. Sayı:")
+    var b= readln().toInt()
+    var min:Int?
+
+    if(a<b)
+        println("küçük sayı $a")
+    else
+        println("kücük sayı $b")
+
+}
