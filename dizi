@@ -1,0 +1,9 @@
+fun main(args: Array<String>) {
+    var dizi=Array<String>(3){""}
+    dizi[0]="Ali"
+    dizi[1]="Ahmet"
+    dizi[2]="Ayse"
+    dizi[3]="Ali"
+    println(dizi[2])
+
+}
