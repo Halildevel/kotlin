@@ -1,0 +1,10 @@
+var Liste= arrayListOf<String>()
+    Liste.add("Ahmet")
+    Liste.add("Ayse")
+    Liste.add("Burak")
+
+    println("Birinci eleman "+Liste[0])
+    println("İkinci eleman "+Liste.get(1))
+
+
+}
