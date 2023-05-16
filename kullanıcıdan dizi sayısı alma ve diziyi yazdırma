@@ -1,0 +1,16 @@
+fun main(args: Array<String>) {
+    println("dizinin boyutu")
+    val boyut= readln().toInt()
+    val dizi= Array<String>(boyut){""}
+
+    println("Dizinin Elemanlarını giriniz")
+    for (i in 0 until boyut){
+        dizi[i]= readln().toInt()
+    }
+
+    println("Dizinin Elemanları")
+    for (eleman in dizi){
+        println(eleman)
+    }
+
+}
