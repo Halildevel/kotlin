@@ -1,0 +1,18 @@
+fun main(args: Array<String>) {
+    var Liste= arrayListOf<String>()
+    Liste.add("Ahmet")
+    Liste.add("Ayse")
+    Liste.add("Burak")
+
+    println("Birinci eleman "+Liste[0])
+    println("İkinci eleman "+Liste.get(1))
+    println("-------Tüm Liste--------")
+    for (eleman in Liste){
+        println(eleman)
+    }
+    Liste.add("Cengiz")
+    for (eleman in Liste){
+        println(eleman)}
+
+
+}
