@@ -1,0 +1,13 @@
+fun main(args: Array<String>) {
+    var Liste= arrayListOf<String>()
+    Liste.add("Ahmet")
+    Liste.add("Ayse")
+    Liste.add("Burak")
+
+    if (Liste.contains("Burak")){
+        print("Sonuc bulundu")
+    }
+    else {
+        print("Sonuc Bulunamadı")
+    }
+}
