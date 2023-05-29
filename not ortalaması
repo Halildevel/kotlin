@@ -1,0 +1,49 @@
+package com.example.notortalamasi
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.example.notortalamasi.databinding.ActivityMainBinding
+
+class MainActivity : AppCompatActivity() {
+
+    lateinit var binding: ActivityMainBinding
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.hesapla.setOnClickListener() {
+            if (binding.n1.text.isNotEmpty() && binding.n2.text.isNotEmpty()) {
+                var s1 = binding.n1.text.toString().toInt()
+                var s2 = binding.n2.text.toString().toInt()
+                if (s1 >= 0 && s1 <= 100 && s2 >= 0 && s2 <= 100) {
+                    var ort: Double = (s1 + s2) / 2.toDouble()
+                    if (ort < 50) {
+                        binding.sonuc.text = ort.toString() + "ile kaldınız"
+                        binding.sonuc.setTextColor(getColor(R.color.kirmizi))
+                    } else {
+                        binding.sonuc.text = ort.toString() + "ile kaldınız"
+                        binding.sonuc.setTextColor(getColor(R.color.yesil))
+                    }
+                } else if (s1 >= 0 && s1 <= 10) {
+                    binding.sonuc.text = "2. sinav notu hatalı"
+                    binding.sonuc.setTextColor(getColor(R.color.kirmizi))
+                } else if (s2 >= 0 && s2 <= 100) {
+                    binding.sonuc.text = "1. sinav notu hatalı"
+                    binding.sonuc.setTextColor(getColor(R.color.kirmizi))
+                } else {
+                    binding.sonuc.text = "sinav notları hatalı"
+                    binding.sonuc.setTextColor(getColor(R.color.kirmizi))
+                }
+            } else if (binding.n1.text.isEmpty() && binding.n2.text.isNotEmpty()) {
+                binding.sonuc.text = "1. alan boş geçilemez"
+                binding.sonuc.setTextColor(getColor(R.color.kirmizi))
+            } else if (binding.n1.text.isEmpty() && binding.n2.text.isEmpty()) {
+                binding.sonuc.text = "2. alan boş geçilemez"
+                binding.sonuc.setTextColor(getColor(R.color.kirmizi))
+            } else {
+                binding.sonuc.text = "not alanları boş geçilemez"
+                binding.sonuc.setTextColor(getColor(com.example.notortalamasi.R.color.kirmizi))
+            }
+        }
+    }
+}
